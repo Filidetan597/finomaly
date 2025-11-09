@@ -1,0 +1,26 @@
+{
+  "not_trained": {
+    "en": "Model is not trained yet. Please train with fit() first.",
+    "tr": "Model henüz eğitilmedi. Lütfen önce fit() ile eğitin."
+  },
+  "column_missing": {
+    "en": "Column '{col}' not found in Excel.",
+    "tr": "Excel'de '{col}' adında bir sütun yok."
+  },
+  "anomaly": {
+    "en": "Anomaly",
+    "tr": "Anomali"
+  },
+  "result_column": {
+    "en": "Anomaly",
+    "tr": "Anomali"
+  },
+  "unusual_time": {
+    "en": "UnusualTime",
+    "tr": "Alışılmadık Saat"
+  },
+  "behavior_deviation": {
+    "en": "BehaviorDeviation",
+    "tr": "Davranış Sapması"
+  }
+}

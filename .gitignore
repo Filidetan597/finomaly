@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.env
+*.xlsx
+*.pkl
+# Exclude test/demo scripts from repo
+bigdata_performance_test.py
+detailed_profile_test.py
+example_corporate_test.py
+test_*.py
+*_test.py
+examples/
