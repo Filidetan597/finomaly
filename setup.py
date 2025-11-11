@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="finomaly",
-    version="0.1.4",
+    version="0.1.5",
     author="Barisaksel",
     description="A rule-based and machine learning-based anomaly detection library for financial transactions.",
     long_description=open("README.md", encoding="utf-8").read(),
